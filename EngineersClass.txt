@@ -1,0 +1,19 @@
+
+public class Engineer extends Employee {
+
+	private int salary;
+	private String grade;
+
+	public Engineer(int salary,String grade) {
+		this.salary = salary;
+		this.grade = grade;
+	}
+
+	@Override
+	void label() {
+		System.out.println("Employees Data: ");
+		System.out.println("GRADE : " + grade);
+		System.out.println("SALARY: " + salary);
+	}
+
+}

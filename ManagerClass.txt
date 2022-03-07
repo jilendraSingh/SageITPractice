@@ -1,0 +1,25 @@
+
+public class Manager extends Employee {
+	private int salary;
+	private String grade;
+
+	public Manager(int salary, String grade) {
+
+		this.salary = salary;
+		this.grade = grade;
+	}
+
+	@Override
+	void label() {
+		System.out.println("Employees Data: ");
+		System.out.println("GRADE : " + grade);
+		System.out.println("SALARY: " + salary);
+	}
+
+	public static void main(String[] args) {
+      Manager m=new Manager(50000,"B");
+      Engineer e=new Engineer(70000,"A");
+      m.label();
+      e.label();
+	}
+}
